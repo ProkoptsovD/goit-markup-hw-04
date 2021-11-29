@@ -663,12 +663,17 @@ img {
   text-align: center;
 
   border: none;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15); */
   border-radius: 4px;
 
   color: var(--secondary-text-color);
   background-color: var(--primary-color);
   cursor: pointer;
+}
+
+.hero .botton:hover,
+.hero .button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Оформление страницы Portfolio */
