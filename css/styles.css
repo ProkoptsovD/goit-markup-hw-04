@@ -216,7 +216,8 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-image: url("../images/bg-img-hero.jpg");
+  background-image: url("../images/bg-img-hero.jpg"),
+    linear-gradient(to right, #2f303a 40%, #c4c4c4);
   background-repeat: no-repeat;
   background-size: 1600px, contain;
   background-position: center;
