@@ -216,7 +216,12 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--bcg-color);
+  background-image: url("../images/bg-img-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: 1600px, contain;
+  background-position: center;
+
+  /* background-color: var(--bcg-color); */
 }
 
 .hero-title {
@@ -330,6 +335,22 @@ img {
 .team-list .text {
   font-size: 16px;
   line-height: 1.19;
+}
+
+/* Коробочки для иконок в секции Преимущества */
+
+.advantagies-box {
+  min-width: 270px;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+
+  background-color: #f5f4fa;
 }
 
 /* Оформление секции Что мы делаем*/
