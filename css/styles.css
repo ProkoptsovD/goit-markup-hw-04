@@ -396,8 +396,8 @@ img {
 
 .team-list {
   display: flex;
-  margin-top: var(-1 * (--cage-gaps));
-  margin-left: var(-1 * (--cage-gaps));
+  margin-top: -30px;
+  margin-left: -30px;
   padding: 0;
 }
 
@@ -490,6 +490,51 @@ img {
   padding: 0;
 
   margin-bottom: 16px;
+}
+
+/* Оформление секции Наши партенры */
+.partners .container {
+  padding: 94px 15px;
+}
+
+.partners-title {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--headings-color);
+}
+
+.partners-list {
+  display: flex;
+}
+
+.partners-element {
+  width: 170px;
+
+  padding: 16px 32px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.partners-element:not(:last-child) {
+  margin-right: 30px;
+}
+
+.partners-icon {
+  fill: #afb1b8;
+}
+
+.partners-link:hover .partners-icon,
+.partners-link:focus .partners-icon {
+  fill: var(--primary-color);
 }
 
 /* Оформление адреса в футуре  */
