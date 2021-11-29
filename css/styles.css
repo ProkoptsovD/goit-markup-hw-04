@@ -418,6 +418,18 @@ img {
   margin-bottom: 10px;
 }
 
+/* Оформление коробочек и иконок для секции Наша команда */
+
+.team-social {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.team-social :not(:last-child) {
+  margin-right: 10px;
+}
+
 /* Обертка для заголовка и текста под фото команды */
 
 .team-thumb .content {
