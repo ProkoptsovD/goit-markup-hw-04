@@ -1,0 +1,579 @@
+/* Цвет кнопок первичный #2196F3 */
+/* Цвет заголовков #212121 */
+/* Цвет текста в абзацах #757575  */
+/* Цвет текста белый #ffffff */
+/* цвет ссылок в футере rgba(255,255,255, .6) */
+
+/* Оформление элементов с общим дизайном */
+:root {
+  --primary-color: #2196f3;
+  --headings-color: #212121;
+  --primary-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --footer-links-color: rgba(255, 255, 255, 0.6);
+  --bcg-color: #2f303a;
+  --logo-last-part1-color: #000000;
+  --logo-last-part2-color: #ffffff;
+
+  --cage-gaps: 30px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+
+  background-color: var(--secondary-text-color);
+  color: var(--primary-text-color);
+}
+
+/* Классы-утилиты */
+
+/* убирает стили у всех списков */
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* скрывает заголовок */
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+/* добавляет нижний отступ для хедера в портфолио
+.bottom-margin {
+  margin-bottom: 94px;
+} */
+
+/* убирает нижний зазор у картинок с тегом img */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Добавляет фоновый цвет для секции Наша команда */
+.bg-color {
+  background-color: #f5f4fa;
+}
+
+/* универсальный контейнер */
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* background-color: lightblue; */
+}
+
+/* Оформление хедера */
+
+.page-header {
+  height: 80px;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 50px;
+}
+
+.nav :last-child {
+  margin-right: 0;
+}
+
+.auth {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth .item {
+  margin-right: 50px;
+}
+
+.auth :last-child {
+  margin-right: 0px;
+}
+
+/* Оформление логотипа */
+
+.logo-first {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: var(--primary-color);
+}
+
+.logo-second {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  color: var(--logo-last-part1-color);
+}
+
+.logo-third {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  color: var(--logo-last-part2-color);
+}
+
+/* ОФормление навигации */
+
+.nav .nav-links {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: var(--headings-color);
+}
+
+.nav .nav-links:hover,
+.nav .nav-links:focus {
+  color: var(--primary-color);
+  border: none;
+}
+
+.nav .nav-links.current {
+  color: #2196f3;
+}
+
+/* Оформление ссылок в секции контактов */
+
+.auth .auth-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: var(--primary-text-color);
+}
+
+.auth .auth-nav:hover,
+.auth .auth-nav:focus {
+  color: var(--primary-color);
+}
+
+/* Оформляем Hero */
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: var(--bcg-color);
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+
+.hero > .container {
+  text-align: center;
+}
+
+/* оформление секций */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* .section > .container {
+  margin-bottom: 94px;
+
+} */
+
+.title {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+
+  padding: 0;
+}
+
+.section-title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--headings-color);
+}
+
+/* Сетка для блока Наши преимущества */
+.advantagies-list {
+  display: flex;
+  margin-right: -30px;
+  margin-top: -30px;
+
+  /* margin-top: var(-1 * (--cage-gaps));
+  margin-left: var(-1 * (--cage-gaps)); */
+  padding: 0;
+}
+
+.items {
+  flex-basis: calc(91% / 3 - 90px);
+  margin-right: 30px;
+  margin-top: 30px;
+
+  /* flex-basis: calc((100% - var(--cage-gaps)) / 4);
+  margin-top: var(--cage-gaps);
+  margin-left: var(--cage-gaps); */
+
+  /* outline: 1px solid darkblue; */
+}
+
+.items:last-child {
+  margin-right: 0;
+}
+
+.items .text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.advantagies-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--headings-color);
+}
+
+.advantagies-list .title {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  color: var(--headings-color);
+}
+
+.team-list .text {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Оформление секции Что мы делаем*/
+
+.container > .section-title {
+  margin-bottom: 50px;
+}
+
+.container .examples {
+  display: flex;
+}
+
+.examples {
+  flex-basis: calc(100% / 2 - 60px);
+  margin-top: -30px;
+  margin-right: -30px;
+
+  /*   
+  flex-basis: calc((100% - 60px) / 3);
+  margin-top: var(-1 * (--cage-gaps));
+  margin-left: var(-1 * (--cage-gaps)); */
+}
+
+.pics {
+  margin-top: 30px;
+  margin-right: 30px;
+
+  /* margin-top: var(--cage-gaps);
+  margin-left: var(--cage-gaps); */
+}
+
+.pics:last-of-type {
+  margin-right: 0;
+}
+
+.no-top-padding {
+  padding-top: 0;
+}
+
+/* Оформление секции Наша команда */
+
+/* Сетка для секции Наша команда */
+
+.team-list {
+  display: flex;
+  margin-top: var(-1 * (--cage-gaps));
+  margin-left: var(-1 * (--cage-gaps));
+  padding: 0;
+}
+
+.team-thumb {
+  flex-basis: calc((100% - var(--cage-gaps)) / 4);
+  margin-top: var(--cage-gaps);
+  margin-left: var(--cage-gaps);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+
+  background-color: #ffffff;
+}
+
+.team-thumb .title {
+  margin-bottom: 10px;
+}
+
+/* Обертка для заголовка и текста под фото команды */
+
+.team-thumb .content {
+  padding-top: 30px;
+  padding-right: 58px;
+  padding-bottom: 30px;
+  padding-left: 53px;
+
+  text-align: center;
+}
+
+.content .text {
+  margin: 0;
+  padding: 0;
+}
+
+/* Оформление адреса в футуре  */
+
+.footer-bcg {
+  background-color: var(--bcg-color);
+}
+
+.footer-bcg .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container .logo-third {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.item .geo-link {
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+
+  color: var(--secondary-text-color);
+}
+
+.footer-info {
+  min-width: 231px;
+}
+
+.footer-info .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  font-style: normal;
+
+  color: var(--primary-text-color);
+}
+
+.footer-info .link:hover,
+.footer-info .link:focus {
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
+}
+
+/* Оформление кнопки для Hero*/
+
+.hero .button {
+  display: inline-block;
+  min-width: 200px;
+  height: 50px;
+
+  padding-top: 10px;
+  padding-left: 32px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+
+  font-family: inherit;
+  text-align: center;
+
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  color: var(--secondary-text-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Оформление страницы Portfolio */
+
+/* Офорляем секции в main */
+
+.projects .example {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--headings-color);
+}
+
+.projects .link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.projects .text {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* оформление кнопок в main страницы Portfolio */
+
+.submenu .submenu-button {
+  padding: 6px 22px;
+  min-width: 73px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  border: transparent;
+  border-radius: 4px;
+  /* border-color: #f5f4fa; */
+
+  color: var(--headings-color);
+  background-color: #f5f4fa;
+}
+
+.submenu .submenu-button:hover,
+.submenu .submenu-button:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color) solid transparent;
+  cursor: pointer;
+
+  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px; */
+}
+
+.submenu .submenu-button.current {
+  color: var(--secondary-text-color);
+  background-color: var(--primary-color);
+}
+
+/* Позиционирование фильтра на странице Portfolio */
+.submenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.submenu .filter {
+  padding-right: 8px;
+}
+
+.filter:last-child {
+  padding-right: 0;
+}
+
+/* Сетка для портфолио с примерами работ */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+
+  /* margin-top: var(-1 (--cage-gaps));
+  margin-left: var(-1 (--cage-gaps)); */
+  /* не работает почему-то */
+}
+
+.cards {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-top: 30px;
+  margin-left: 30px;
+  /* 
+  flex-basis: calc ((100% - var(3 (--cage-gaps))) / 3);
+  margin-top: var(--cage-gaps);
+  margin-left: var(--cage-gaps); */
+  /* тоже не работает */
+}
+
+.description {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.description .text {
+  margin: 0;
+  padding: 0;
+}
+
+.cards .description {
+  padding: 20px 24px;
+}
+
+.description .example {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 4px;
+}
