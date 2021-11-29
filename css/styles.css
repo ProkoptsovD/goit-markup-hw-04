@@ -456,8 +456,6 @@ img {
   overflow: visible;
 
   fill: #afb1b8;
-  /* width: 44px;
-  height: 44px; */
 
   border-radius: 100%;
 }
@@ -544,6 +542,7 @@ img {
 }
 
 .footer-bcg .container {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -586,6 +585,67 @@ img {
   color: var(--secondary-text-color);
 }
 
+/* Секция с сслыками на соцсети в футере*/
+
+.footer-thumb {
+  margin-left: 70px;
+}
+
+.footer-socials {
+  display: flex;
+}
+
+.footer-socials-title {
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+
+.footer-socials-element .footer-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 100%;
+
+  background-color: #43444d;
+}
+
+.footer-socials-icon {
+  object-fit: contain;
+  overflow: visible;
+
+  fill: #ffffff;
+
+  border-radius: 100%;
+}
+
+.footer-socials-element:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--primary-color);
+}
+
+/* .footer-socials:hover .footer-socials-icon,
+.footer-socials:focus .footer-socials-icon {
+  fill: var(--secondary-text-color);
+} */
 /* Оформление кнопки для Hero*/
 
 .hero .button {
