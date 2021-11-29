@@ -105,11 +105,17 @@ img {
 }
 
 .auth .item {
+  display: flex;
   margin-right: 50px;
+  align-items: center;
 }
 
 .auth :last-child {
   margin-right: 0px;
+}
+
+.smartphone-icon {
+  content: "";
 }
 
 /* Оформление логотипа */
@@ -165,9 +171,23 @@ img {
   color: #2196f3;
 }
 
+/* .auth .icon:hover,
+.auth .icon:focus {
+  fill: currentColor;
+  cursor: pointer;
+} */
+
 /* Оформление ссылок в секции контактов */
 
+.auth-nav .item {
+  display: flex;
+  align-items: center;
+}
+
 .auth .auth-nav {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -177,11 +197,19 @@ img {
   color: var(--primary-text-color);
 }
 
-.auth .auth-nav:hover,
-.auth .auth-nav:focus {
+.auth-nav:hover,
+.auth-nav:focus {
   color: var(--primary-color);
 }
 
+.auth-nav:hover .icon {
+  fill: currentColor;
+}
+
+.auth-nav .icon {
+  fill: #757575;
+  margin-right: 10px;
+}
 /* Оформляем Hero */
 
 .hero {
@@ -401,7 +429,7 @@ img {
   margin-bottom: 20px;
 }
 
-.item:not(:last-child) {
+.footer-info .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
