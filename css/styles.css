@@ -152,6 +152,8 @@ img {
 /* ОФормление навигации */
 
 .nav .nav-links {
+  display: block;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -168,7 +170,20 @@ img {
 }
 
 .nav .nav-links.current {
-  color: #2196f3;
+  color: var(--primary-color);
+}
+
+.nav-links.current::after {
+  display: block;
+  margin-top: 28px;
+
+  content: "";
+  width: 100%;
+  height: 4px;
+
+  border-radius: 2px;
+
+  background-color: var(--primary-color);
 }
 
 /* .auth .icon:hover,
